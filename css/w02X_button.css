@@ -1,0 +1,32 @@
+.container .btn-left {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 26%;
+    height: 51.6%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.container .btn-mid {
+    position: absolute;
+    top: 30%;
+    left: 36.5%;
+    width: 26%;
+    height: 51.6%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.container .btn-right {
+    /*position: absolute;*/
+    top: 30%;
+    left: 69%;
+    width: 26%;
+    height: 51.6%;
+    background-color: rgba(0,0,0,.5);
+}
+
+
+.container .btn:hover {
+    background-color: rgba(0,0,0,.2);
+    color: #fff;
+}

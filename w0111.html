@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="css/general_image_css.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/require.js"></script>
+  <script src="js/general_image_js.js"></script>
+  <script>
+    var t = $(function(){
+      setInterval(oneSecondFunction, 100);
+    });
+    var cnt = 0;
+    function oneSecondFunction() {
+      json_file = get_json_file();
+      resize_image();
+      getButtons(json_file);
+      cnt += 1;
+      if (cnt == 10) {
+        clearInterval(t);
+      }
+    }
+
+</script>
+</head>
+
+<body>
+<div class="container">
+    <img id="start_screen" src="assets/images/w0111.jpg" alt="ALT_TEXT_TO_BE_REPLACED">
+</div>
+
+
+</body>
+</html>

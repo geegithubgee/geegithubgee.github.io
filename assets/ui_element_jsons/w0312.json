@@ -1,0 +1,43 @@
+{
+  "buttons": [
+    {
+      "content": "Pay",
+      "pos": [876, 634, 353, 65],
+      "link_to": "w0411"
+    }],
+  "labels": [
+    {
+      "content": "Payment Method",
+      "pos": [48, 42, 330, 49]
+    }],
+  "input": [
+    {
+      "content": "First Name",
+      "pos": [118, 174, 384, 52]
+    },
+    {
+      "content": "Last Name",
+      "pos": [554, 174, 384, 52]
+    },
+    {
+      "content": "Phone Number",
+      "pos": [118, 267, 384, 52]
+    },
+    {
+      "content": "Card Number",
+      "pos": [118, 412, 518, 52]
+    },
+    {
+      "content": "Expiration Date",
+      "pos": [670, 412, 384, 52]
+    },
+    {
+      "content": "CVV",
+      "pos": [118, 506, 228, 52]
+    },
+    {
+      "content": "Zip Code",
+      "pos": [382, 506, 386, 52]
+    }
+  ]
+}

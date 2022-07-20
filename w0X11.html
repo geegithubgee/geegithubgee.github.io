@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Simple Payment Form use Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+    <div class="row">
+        <!-- You can make it whatever width you want. I'm making it full width
+        on <= small devices and 4/12 page width on >= medium devices -->
+        <div class="col-xs-12 col-md-4">
+
+
+            <!-- CREDIT CARD FORM STARTS HERE -->
+            <div class="panel panel-default credit-card-box">
+                <div class="panel-heading display-table">
+                        <h3 class="panel-title display-td label-text">Order Contact</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <input
+                                        class="form-control"
+                                        name="firstName"
+                                        placeholder="First Name"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <input
+                                        class="form-control"
+                                        name="lastName"
+                                        placeholder="Last Name"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        name="phoneNumber"
+                                        placeholder="Phone Number"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- CREDIT CARD FORM ENDS HERE -->
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <!-- You can make it whatever width you want. I'm making it full width
+        on <= small devices and 4/12 page width on >= medium devices -->
+        <div class="col-xs-12 col-md-4">
+            <!-- CREDIT CARD FORM STARTS HERE -->
+            <div class="panel panel-default credit-card-box">
+                <div class="panel-heading display-table">
+                        <h3 class="panel-title display-td label-text">Payment Details</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form" id="payment-form">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="cardNumber" class="label-text">CARD NUMBER</label>
+                                    <div class="input-group">
+                                        <input
+                                                type="tel"
+                                                class="form-control"
+                                                name="cardNumber"
+                                                placeholder="Valid Card Number"
+                                                autocomplete="cc-number"
+                                                height="100"
+                                        />
+                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label for="cardExpiry" class="label-text"><span class="hidden-xs">EXPIRATION</span><span
+                                            class="visible-xs-inline">EXP</span> DATE</label>
+                                    <input
+                                            type="tel"
+                                            class="form-control"
+                                            name="cardExpiry"
+                                            placeholder="MM / YY"
+                                            autocomplete="cc-exp"
+                                            required
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <label for="cardCVC" class="label-text">CV CODE</label>
+                                    <input
+                                            type="tel"
+                                            class="form-control"
+                                            name="cardCVC"
+                                            placeholder="CVC"
+                                            autocomplete="cc-csc"
+                                            required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- CREDIT CARD FORM ENDS HERE -->
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <!-- You can make it whatever width you want. I'm making it full width
+        on <= small devices and 4/12 page width on >= medium devices -->
+        <div class="col-xs-12 col-md-4">
+
+
+            <!-- CREDIT CARD FORM STARTS HERE -->
+            <div class="panel panel-default credit-card-box">
+                <div class="panel-heading display-table">
+                        <h3 class="panel-title display-td label-text">Order Summary</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label class="price-text"><span class="hidden-xs"> Subtotal</span></label>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="price">
+                                    <label  class="price-text">$3.99</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label class="price-text"><span class="hidden-xs">Taxes</span> </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="price">
+                                    <label  class="price-text">$0.28</label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr size="8" width="90%" color="red">
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label class="total-price-text"><span class="hidden-xs"> Total</span></label>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="price">
+                                    <label  class="total-price-text">$4.27</label>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- CREDIT CARD FORM ENDS HERE -->
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<br>
+
+<div class="submit">
+    <div class="col-xs-12">
+        <button class="btn btn-success btn-lg btn-block" type="submit">Place Order $ 4.27
+        </button>
+    </div>
+</div>
+
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        &lt;!&ndash; You can make it whatever width you want. I'm making it full width-->
+<!--        on <= small devices and 4/12 page width on >= medium devices &ndash;&gt;-->
+<!--        <div class="col-xs-12 col-md-4">-->
+<!--            &lt;!&ndash; CREDIT CARD FORM STARTS HERE &ndash;&gt;-->
+<!--            <div class="panel panel-default credit-card-box">-->
+<!--                <div class="panel-body">-->
+<!--                    <form role="form">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-xs-12">-->
+<!--                                <button class="btn btn-success btn-lg btn-block" type="submit">Start Subscription-->
+<!--                                </button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; CREDIT CARD FORM ENDS HERE &ndash;&gt;-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!-- If you're using Stripe for payments -->
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+</body>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.2.3/jquery.payment.min.js'></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
